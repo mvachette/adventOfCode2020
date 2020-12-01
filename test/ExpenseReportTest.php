@@ -19,4 +19,16 @@ class ExpenseReportTest extends TestCase
         // then
         $this->assertEquals(514579, expenseReport\computeChecksum($report));
     }
+
+    /**
+     * @test
+     */
+    public function get_checksum_base_on_3_entries()
+    {
+        // given
+        $report = [1721, 979, 366, 299, 675, 1456];
+
+        // then
+        $this->assertEquals(241861950, expenseReport\computeChecksum3($report));
+    }
 }
