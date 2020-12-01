@@ -1,0 +1,17 @@
+{
+  "name": "mvachette/aoc2020",
+  "require": {
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "MVA\\AOC2020\\": ["/src"]
+    }
+  },
+  "authors": [
+    {
+      "name": "Marc Vachette",
+      "email": "marc.vachette@gmail.com"
+    }
+  ]
+}
