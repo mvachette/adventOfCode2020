@@ -28,6 +28,9 @@ function computeChecksum3(array $report): int
         $firstNumber = $report[$firstNumberIndex];
         for ($secondNumberIndex = $reportLength-1; $secondNumberIndex > 0; $secondNumberIndex--) {
             $secondNumber = $report[$secondNumberIndex];
+            if ($firstNumber + $secondNumber >= 2020) {
+                continue;
+            }
             for ($thirdNumberIndex = $reportLength-1; $thirdNumberIndex > 0; $thirdNumberIndex--) {
                 $thirdNumber = $report[$thirdNumberIndex];
                 if ($firstNumber + $secondNumber + $thirdNumber === 2020) {
