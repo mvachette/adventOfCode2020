@@ -7,3 +7,4 @@
 
 ## Day 2
 - Start at 2020-12-02 21:01, done at 21:19
+- part 2 done a 21:29

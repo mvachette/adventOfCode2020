@@ -15,3 +15,14 @@ function isPasswordValid(string $passwordDefinition): bool
     return $lowerBound <= $numberOfRequiredLetter
         && $numberOfRequiredLetter <= $upperBound;
 }
+
+function isPasswordValidWithPositionalPolicy(string $passwordDefinition): bool
+{
+    [$firstPosition, $secondPosition, $requiredLetter, $password] = sscanf(
+        $passwordDefinition,
+        '%d-%d %1s: %s'
+    );
+
+    return $password[$firstPosition-1] === $requiredLetter
+        xor $password[$secondPosition-1] === $requiredLetter;
+}
