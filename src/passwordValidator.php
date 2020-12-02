@@ -7,10 +7,10 @@ function isPasswordValid(string $passwordDefinition): bool
 {
     [$lowerBound, $upperBound, $requiredLetter, $password] = sscanf(
         $passwordDefinition,
-        '%d-%d %s %s'
+        '%d-%d %1s: %s'
     );
 
-    $numberOfRequiredLetter = substr_count($password, trim($requiredLetter, ':'));
+    $numberOfRequiredLetter = substr_count($password, $requiredLetter);
 
     return $lowerBound <= $numberOfRequiredLetter
         && $numberOfRequiredLetter <= $upperBound;
