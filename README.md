@@ -16,3 +16,7 @@
 ## Day 4
 - start on 2020-12-06, 20:25, done at 20:55
 - part 2 done at 21:27
+
+## Day5
+- start around 21:00 done at 21:26
+- part 2 done at 21:32
