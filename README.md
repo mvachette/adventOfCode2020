@@ -18,5 +18,9 @@
 - part 2 done at 21:27
 
 ## Day5
-- start around 21:00 done at 21:26
+- start on 2020-12-07 around 21:00 done at 21:26
 - part 2 done at 21:32
+
+## Day 6
+- start on 2020-12-07 on 21:33, done at 21:47
+- part 2 done at 22:04
