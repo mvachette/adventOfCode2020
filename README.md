@@ -24,3 +24,6 @@
 ## Day 6
 - start on 2020-12-07 on 21:33, done at 21:47
 - part 2 done at 22:04
+
+## Day 7
+- around 1 / 1.5 hour of work
